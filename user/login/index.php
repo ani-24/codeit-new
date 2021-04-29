@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,32 +8,31 @@
   <title>Login to CodeIT | CodeIT</title>
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./../css/style.css">
 
 </head>
 <body>
 
   <?php
 
-    include './connection.php';
+    include './../connection.php';
 
     if (isset($_POST['submit'])) {
       $email = $_POST['email'];
       $pass = $_POST['pass'];
       
-      $email_query = " SELECT * FROM registration where email = '$email' ";
-      $email_result = mysqli_query($con, $email_query);
+      $search = " SELECT * FROM registration WHERE email = '$email' ";
+      $search_query = mysqli_query($con, $search);
+      $rows = mysqli_num_rows($search_query);
 
-      $row = mysqli_num_rows($email_query);
-
-      if ($row > 0) {
-        $mysqli_arr = mysqli_fetch_assoc($email_result);
+      if ($rows > 0) {
+        $mysqli_arr = mysqli_fetch_assoc($search_query);
         $arr_pass = $mysqli_arr['pass'];
-        $pass_verify = password_verify($pass, $err_pass);
+        $pass_verify = password_verify($pass, $arr_pass);
         if ($pass_verify) {
-          $_SESSION['fname'] = $mysqli_arr['fname'];
-          $_SESSION['lname'] = $mysqli_arr['lname'];
-          header("location:./../");
+          $_SESSION['fname'] = ucfirst($mysqli_arr['fname']);
+          $_SESSION['lname'] = ucfirst($mysqli_arr['lname']);
+          header("location:./../../");
         } else {
           echo "<script>alert('Password is incorrect');</script>";
         }
@@ -58,13 +58,13 @@
       </div>
 
       <div class="h-center">
-        <p>Not a user?&nbsp;<a href="./register.php">Register here</a></p>
+        <p class="additional-line">Not a user?&nbsp;<a href="./../register/">Register here</a></p>
         <p><button type="submit" class="btn btn-dark submit" name="submit">Submit</button></p>
       </div>
     </form>
 
   </div>
 
-  <script src="./js/main.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>

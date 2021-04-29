@@ -37,11 +37,12 @@ body {
 }
 
 a {
-  color: #003cff;
+  color: #0052ff;
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .main-nav {
@@ -470,6 +471,9 @@ form .submit {
   form .input-field .input:focus + .form-label,
   form .input-field .input.filled + .form-label {
     font-size: 0.5rem;
+  }
+  form .additional-line {
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -23,18 +23,24 @@
 
             if (!isset($_SESSION['fname'])) {
               echo '
-              <li class="nav-item"><a href="./user/login.php" class="nav-link">Login</a></li>
-              <li class="nav-item"><a href="./user/register.php" class="nav-link">Sign in</a></li>
+              <li class="nav-item"><a href="./user/login/" class="nav-link" target="_blank">Login</a></li>
+              <li class="nav-item"><a href="./user/register/" class="nav-link" target="_blank">Sign in</a></li>
               ';
             } else {
-              echo '<li class="nav-item"><a href="#" class="nav-link">Logout</a></li>';
+              echo '<li class="nav-item"><a href="./user/logout.php" class="nav-link">Logout</a></li>';
             }
 
           ?>
         </ul>
       </header>
       <div class="hero-section">
-        <h1>Welcome to CodeIT, the Coding World</h1>
+        <h1>Welcome <span><?php 
+          if (isset($_SESSION['fname'])) {
+            echo $_SESSION['fname'].' to';
+          } else {
+            echo "to CodeIT";
+          }
+        ?></span>, the Coding World</h1>
         <p>
           Let's learn exciting and awesome stuffs from programming together
           through video lectures, notes, test, quiz and other.

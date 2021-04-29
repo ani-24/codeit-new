@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CodeIT | Register to CodeIT</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./../css/style.css">
 </head>
 <body>
   
   <?php
   
-    include './connection.php';
+    include './../connection.php';
     
     if (isset($_POST["submit"])) {
       
@@ -37,7 +37,7 @@
           $query = " INSERT INTO registration ( fname, lname, mobile, email, pass, cpass ) values ( '$fname', '$lname', '$mobile', '$email', '$pass_hash', '$cpass_hash' ) ";
           $result = mysqli_query($con, $query);
           if ($query) {
-            header("location: ./../");
+            header("location: ./../login/");
           } else {
             ?>
             <script>
@@ -83,7 +83,7 @@
       </div>
 
       <div class="h-center">
-        <p>Already a user?&nbsp;<a href="./login.php">Login here</a></p>
+        <p class="additional-line">Already a user?&nbsp;<a href="./../login/">Login here</a></p>
         <p><button type="submit" class="btn btn-dark submit" name="submit">Submit</button></p>
       </div>
 
@@ -91,7 +91,7 @@
 
   </div>
 
-  <script src="./js/main.js"></script>
+  <script src="./main.js"></script>
 
 </body>
 </html>
