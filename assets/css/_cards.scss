@@ -1,0 +1,99 @@
+/* Card background */
+$card-bg: $light;
+$card-fg: $dark;
+
+.card-container {
+  position: relative;
+  width: 100%;
+  background: $card-bg;
+  cursor: pointer;
+  color: $card-fg;
+  display: block;
+  transition: 250ms ease-in-out;
+  .badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $white;
+    padding: 5px 8px;
+    transform: translate(-25%, -25%);
+    text-transform: uppercase;
+    &.badge-yellow {
+      background: $yellow;
+    }
+    &.badge-green {
+      background: $green;
+    }
+  }
+  .card-img {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .card-body {
+    padding: 25px;
+    .card-title {
+      position: relative;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 5px;
+        width: 30%;
+        background: $red;
+        transition: 500ms ease-out;
+      }
+    }
+    .card-desc {
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .card-footer {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .price-tag {
+      position: relative;
+      padding: 5px 15px;
+      padding-left: 30px;
+      background: $red;
+      color: $white;
+      font-size: 0.9rem;
+      clip-path: polygon(100% 0, 100% 100%, 20% 100%, 0 50%, 20% 0);
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translate(0, -50%);
+        height: 7px;
+        width: 7px;
+        background: $light;
+        border-radius: 50%;
+      }
+    }
+  }
+  &:hover {
+    $card-bg: $dark;
+    $card-fg: $light;
+    background: $card-bg;
+    color: $card-fg;
+    .card-body {
+      .card-title {
+        color: $red;
+        &::after {
+          width: 80%;
+        }
+      }
+    }
+  }
+}

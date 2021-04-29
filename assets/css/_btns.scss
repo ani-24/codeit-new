@@ -1,0 +1,53 @@
+.btn {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  color: $light;
+  transition: 250ms ease-in-out;
+  border-radius: 5px;
+  &.btn-blue {
+    background: $blue;
+    transition: background 250ms ease-in-out;
+    &:hover {
+      background: darken($color: $blue, $amount: 15%);
+    }
+  }
+  &.btn-dark {
+    background: $dark;
+  }
+  .icon {
+    transition: 250ms ease-in-out;
+  }
+  &:hover {
+    .icon {
+      margin-left: 10px;
+    }
+  }
+  &.btn-outline-red {
+    border: 1px solid $red;
+    color: $red;
+    &:hover {
+      background: $red;
+      color: $light;
+    }
+  }
+  &.btn-outline-light {
+    border: 1px solid $light;
+    color: $light;
+    &:hover {
+      background: $light;
+      color: $dark;
+    }
+  }
+  &.btn-outline-blue {
+    border: 1px solid $blue;
+    color: $blue;
+    &:hover {
+      background: $blue;
+      color: $light;
+    }
+  }
+}

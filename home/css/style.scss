@@ -1,0 +1,51 @@
+@import "./../../assets/css/links";
+
+#home {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    no-repeat url("./../../assets/img/bg.jpg") center / cover fixed;
+  header {
+    position: absolute;
+    z-index: 2;
+    background: transparent;
+  }
+  .hero-section {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $light;
+    h1 {
+      position: relative;
+      margin-bottom: 1.5em;
+      font-family: $zendots;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: 5px;
+        bottom: -30%;
+        left: 10%;
+        background: $light;
+      }
+    }
+  }
+}
+
+#courses {
+  padding: 50px 0;
+  .heading {
+    color: $dark;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: $bangers;
+    letter-spacing: 5px;
+  }
+  .card-container {
+    margin-bottom: 30px;
+  }
+}
