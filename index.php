@@ -17,14 +17,14 @@
         <div class="brand-logo"><a href="#">CodeIT</a></div>
         <ul class="nav-list">
           <li class="nav-item"><a href="./" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="./course/" class="nav-link">Courses</a></li>
-          <li class="nav-item"><a href="./contact/" class="nav-link">Contact us</a></li>
+          <li class="nav-item"><a href="./course" class="nav-link">Courses</a></li>
+          <li class="nav-item"><a href="./contact" class="nav-link">Contact us</a></li>
           <?php
 
             if (!isset($_SESSION['fname'])) {
               echo '
-              <li class="nav-item"><a href="./user/login/" class="nav-link" target="_blank">Login</a></li>
-              <li class="nav-item"><a href="./user/register/" class="nav-link" target="_blank">Sign in</a></li>
+              <li class="nav-item"><a href="./user/login" class="nav-link" target="_blank">Login</a></li>
+              <li class="nav-item"><a href="./user/register" class="nav-link" target="_blank">Sign in</a></li>
               ';
             } else {
               echo '<li class="nav-item"><a href="./user/logout.php" class="nav-link">Logout</a></li>';
@@ -99,7 +99,7 @@
           </div>
         </div>
         <div class="h-center">
-          <a href="./course/" class="btn btn-dark">View all courses <span class="icon">&rarr;</span></a>
+          <a href="./course" class="btn btn-dark">View all courses <span class="icon">&rarr;</span></a>
         </div>
       </div>
     </div>
@@ -122,9 +122,9 @@
           </div>
           <div class="section">
             <h3 class="heading">Get connected</h3>
-            <a href="#" class="m-10 btn btn-outline-red">Sign in</a>
-            <a href="#" class="m-10 btn btn-outline-light">Login</a>
-            <a href="#" class="m-10 btn btn-outline-blue">Drop a message</a>
+            <a href="./user/register" class="m-10 btn btn-outline-red">Sign in</a>
+            <a href="./user/login" class="m-10 btn btn-outline-light">Login</a>
+            <a href="./contact/" class="m-10 btn btn-outline-blue">Drop a message</a>
           </div>
         </div>
         <div class="copyright">

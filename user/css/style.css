@@ -267,6 +267,10 @@ p {
   border-radius: 5px;
 }
 
+.btn:hover {
+  text-decoration: none;
+}
+
 .btn.btn-blue {
   background: #3498db;
   -webkit-transition: background 250ms ease-in-out;

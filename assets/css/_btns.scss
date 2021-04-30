@@ -8,6 +8,9 @@
   color: $light;
   transition: 250ms ease-in-out;
   border-radius: 5px;
+  &:hover {
+    text-decoration: none;
+  }
   &.btn-blue {
     background: $blue;
     transition: background 250ms ease-in-out;
