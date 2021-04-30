@@ -88,7 +88,7 @@
               </div>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-green"><i class="fas fa-shopping-cart"></i>&nbsp;Buy Now</a>
+              <a href="./buy-courses/html-course/" class="btn btn-green"><i class="fas fa-shopping-cart"></i>&nbsp;Buy Now</a>
               <div class="price-tag">₹1999.00</div>
             </div>
           </div>

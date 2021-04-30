@@ -1,0 +1,11 @@
+.profile-nav {
+  width: 100%;
+  padding: 1em 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .brand-logo {
+    font-size: 3rem;
+    font-family: $staatliches;
+  }
+}
