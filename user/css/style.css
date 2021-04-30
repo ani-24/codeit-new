@@ -364,6 +364,18 @@ p {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 100%;
+  }
+}
+
 .grid {
   display: -ms-grid;
   display: grid;

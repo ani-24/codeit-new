@@ -58,7 +58,7 @@
     <main>
       <div class="container">
         <form action="#" method="POST">
-          <div class="grid grid-2">
+          <div class="grid">
             <div class="input-field">
               <input type="text" placeholder="First name" class="input" />
             </div>

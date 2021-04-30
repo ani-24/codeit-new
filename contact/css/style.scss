@@ -4,16 +4,11 @@ body {
   background: $dark;
 }
 
-.grid {
-  grid-template-columns: repeat(auto-fit, minmax(28rem, 30rem));
-  margin-bottom: 30px;
-}
-
 form {
   position: relative;
   width: 100%;
   margin-top: 5em;
-  padding: 50px 100px;
+  padding: 50px;
   background: $dark;
   border-radius: 2em;
   box-shadow: -4px -4px 20px rgba($color: $black, $alpha: 0.1),
@@ -51,5 +46,20 @@ form {
       4px 4px 20px rgba($color: $black, $alpha: 0.1);
     padding: 10px 20px;
     color: $light;
+  }
+}
+
+.grid {
+  grid-template-columns: repeat(2, 45%);
+  margin-bottom: 30px;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(1, 100%);
+  }
+
+  form {
+    padding: 25px;
   }
 }
