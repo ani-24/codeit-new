@@ -31,7 +31,30 @@
 
       ?>
       </ul>
+      <div class="hamburger_menu">
+        <bar class="bar" id="bar1"></bar>
+        <bar class="bar" id="bar2"></bar>
+      </div>
     </header>
+    <div class="sidenav">
+      <ul class="nav-list">
+        <a class="nav-link" href="./../"><li class="nav-item">Home</li></a>
+        <a class="nav-link" href="./../course"><li class="nav-item">Courses</li></a>
+        <a class="nav-link" href="./"><li class="nav-item ">Contact us</li></a>
+        <?php
+
+          if (!isset($_SESSION['fname'])) {
+            echo '
+            <a class="nav-link" href="./../user/login" target="_blank"><li class="nav-item">Login</li></a>
+            <a class="nav-link" href="./../user/register" target="_blank"><li class="nav-item">Sign in</li></a>
+            ';
+          } else {
+            echo '<a class="nav-item" href="./../user/logout.php"><li class="nav-item">Logout</li></a>';
+          }
+
+        ?>
+      </ul>
+    </div>
     <main>
       <div class="container">
         <form action="#" method="POST">
@@ -63,5 +86,6 @@
         </form>
       </div>
     </main>
+    <script src="./../assets/js/headers.js"></script>
   </body>
 </html>
