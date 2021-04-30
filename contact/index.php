@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -43,16 +44,16 @@
         <a class="nav-link" href="./"><li class="nav-item ">Contact us</li></a>
         <?php
 
-          if (!isset($_SESSION['fname'])) {
-            echo '
-            <a class="nav-link" href="./../user/login" target="_blank"><li class="nav-item">Login</li></a>
-            <a class="nav-link" href="./../user/register" target="_blank"><li class="nav-item">Sign in</li></a>
-            ';
-          } else {
-            echo '<a class="nav-item" href="./../user/logout.php"><li class="nav-item">Logout</li></a>';
-          }
+            if (!isset($_SESSION['fname'])) {
+              echo '
+              <a class="nav-link" href="./user/login" target="_blank"><li class="nav-item">Login</li></a>
+              <a class="nav-link" href="./user/register" target="_blank"><li class="nav-item">Sign in</li></a>
+              ';
+            } else {
+              echo '<a class="nav-link" href="./user/logout.php"><li class="nav-item">Logout</li></a>';
+            }
 
-        ?>
+          ?>
       </ul>
     </div>
     <main>
