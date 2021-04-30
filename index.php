@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./home/css/style.css" />
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/img/codeit_favicon.png" type="image/png">
+    <!-- Font awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
   <body>
     <div id="home">
@@ -86,6 +88,7 @@
               </div>
             </div>
             <div class="card-footer">
+              <a href="#" class="btn btn-green"><i class="fas fa-shopping-cart"></i>&nbsp;Buy Now</a>
               <div class="price-tag">₹1999.00</div>
             </div>
           </div>
@@ -101,6 +104,7 @@
               </div>
             </div>
             <div class="card-footer">
+              <a href="#" class="btn btn-green"><i class="fas fa-shopping-cart"></i>&nbsp;Buy Now</a>
               <div class="price-tag">₹1999.00</div>
             </div>
           </div>
@@ -117,6 +121,7 @@
               </div>
             </div>
             <div class="card-footer">
+              <a href="#" class="btn btn-green"><i class="fas fa-shopping-cart"></i>&nbsp;Buy Now</a>
               <div class="price-tag">₹3999.00</div>
             </div>
           </div>

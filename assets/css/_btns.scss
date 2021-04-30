@@ -20,6 +20,15 @@
   }
   &.btn-dark {
     background: $dark;
+    &:hover {
+      background: lighten($color: $dark, $amount: 15%);
+    }
+  }
+  &.btn-green {
+    background: $green;
+    &:hover {
+      background: darken($color: $green, $amount: 15%);
+    }
   }
   .icon {
     transition: 250ms ease-in-out;
@@ -29,6 +38,7 @@
       margin-left: 10px;
     }
   }
+  // outline btns
   &.btn-outline-red {
     border: 1px solid $red;
     color: $red;

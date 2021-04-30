@@ -6,10 +6,10 @@ $card-fg: $dark;
   position: relative;
   width: 100%;
   background: $card-bg;
-  cursor: pointer;
   color: $card-fg;
-  display: block;
+  display: grid;
   transition: 250ms ease-in-out;
+  grid-template-areas: "img" "body" "footer";
   .badge {
     position: absolute;
     top: 0;
@@ -27,6 +27,7 @@ $card-fg: $dark;
   }
   .card-img {
     width: 100%;
+    grid-area: "img";
     img {
       width: 100%;
     }
@@ -55,12 +56,14 @@ $card-fg: $dark;
         font-size: 1rem;
       }
     }
+    grid-area: "footer";
   }
   .card-footer {
     padding: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    grid-area: "footer";
     .price-tag {
       position: relative;
       padding: 5px 15px;

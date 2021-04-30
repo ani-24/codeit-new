@@ -247,11 +247,12 @@ p {
   position: relative;
   width: 100%;
   background: #f7f7f7;
-  cursor: pointer;
   color: #191919;
-  display: block;
+  display: -ms-grid;
+  display: grid;
   -webkit-transition: 250ms ease-in-out;
   transition: 250ms ease-in-out;
+      grid-template-areas: "img" "body" "footer";
 }
 
 .card-container .badge {
@@ -275,6 +276,7 @@ p {
 
 .card-container .card-img {
   width: 100%;
+  grid-area: "img";
 }
 
 .card-container .card-img img {
@@ -283,6 +285,7 @@ p {
 
 .card-container .card-body {
   padding: 25px;
+  grid-area: "footer";
 }
 
 .card-container .card-body .card-title {
@@ -320,6 +323,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  grid-area: "footer";
 }
 
 .card-container .card-footer .price-tag {
@@ -415,6 +419,18 @@ p {
 
 .btn.btn-dark {
   background: #191919;
+}
+
+.btn.btn-dark:hover {
+  background: #3f3f3f;
+}
+
+.btn.btn-green {
+  background: #2ecc71;
+}
+
+.btn.btn-green:hover {
+  background: #208e4e;
 }
 
 .btn .icon {
