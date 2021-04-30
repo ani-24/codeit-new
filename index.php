@@ -50,7 +50,7 @@
               <a class="nav-link" href="./user/register" target="_blank"><li class="nav-item">Sign in</li></a>
               ';
             } else {
-              echo '<a class="nav-item" href="./user/logout.php"><li class="nav-item">Logout</li></a>';
+              echo '<a class="nav-link" href="./user/logout.php"><li class="nav-item">Logout</li></a>';
             }
 
           ?>
