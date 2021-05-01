@@ -38,6 +38,26 @@
       </div>
     </div>
   </header>
+
+  <div class="bg" data-img="html_thumbnail.png"></div>
+  
+  <div class="container">
+    <div class="course-details">
+      <div class="about-course">
+        <div class="course-preview video-container">
+          <div class="play-circle-outer">
+            <div class="play-circle-inner">
+              <i class="fas fa-play play-icon"></i>
+            </div>
+          </div>
+          <video src="./media/preview.mp4" poster="./../../assets/img/html_thumbnail.png"></video>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="./../assets/js/headers.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./../assets/js/video.js"></script>
 </body>
 </html>

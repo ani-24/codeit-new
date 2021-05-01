@@ -15,6 +15,11 @@
           box-sizing: border-box;
 }
 
+img,
+video {
+  width: 100%;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -650,5 +655,78 @@ footer .copyright .copyright-text {
 .profile-nav .extra .profile .profile-pic {
   font-size: 2rem;
   cursor: pointer;
+}
+
+.bg {
+  height: 80vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.course-details {
+  position: relative;
+  width: 100%;
+  background: #f7f7f7;
+  padding: 5px;
+  -webkit-transform: translateY(-10em);
+          transform: translateY(-10em);
+}
+
+.course-details .about-course {
+  width: 100%;
+}
+
+.course-details .about-course .video-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.course-details .about-course .video-container .play-circle-outer {
+  position: absolute;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px dashed #3498db;
+}
+
+.course-details .about-course .video-container .play-circle-outer .play-circle-inner {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background: #3498db;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.course-details .about-course .video-container .play-circle-outer .play-circle-inner .play-icon {
+  font-size: 2rem;
+  color: #f7f7f7;
 }
 /*# sourceMappingURL=style.css.map */
