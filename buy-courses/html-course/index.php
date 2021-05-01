@@ -17,24 +17,27 @@
     if (!isset($_SESSION["fname"])) {
       ?>
       <script>
-        alert("You must be signed in to purchase courses");
+        alert("You must be signed in to purchase the courses");
+        location.replace("./../../user/login");
       </script>
       <?php
-      header("location:./../user/login");
     }
-
   ?>
 
   <header class="profile-nav">
     <div class="brand-logo">
-      CodeIT
+      <a href="./../../">CodeIT</a>
     </div>
     <div class="extra">
+      <div class="search">
+        <input type="text" id="search-courses" class="searchbar" placeholder="Search for courses">
+      </div>
+      <i class="fas fa-search search-icon"></i>
       <div class="profile">
         <i class="fas fa-user-circle profile-pic"></i>
       </div>
     </div>
   </header>
-
+  <script src="./../assets/js/headers.js"></script>
 </body>
 </html>

@@ -1,11 +1,77 @@
 .profile-nav {
+  position: relative;
   width: 100%;
-  padding: 1em 5%;
+  padding: 0.5em 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: $black;
   .brand-logo {
     font-size: 3rem;
     font-family: $staatliches;
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+  .extra {
+    color: $white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .search {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      pointer-events: none;
+      background: $light;
+      transition: all 500ms ease-out;
+      .searchbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: none;
+        outline: none;
+        background: transparent;
+        font-family: $poppins;
+        height: 100%;
+        width: 80%;
+        padding: 25px;
+        &::placeholder {
+          font-family: inherit;
+        }
+      }
+      &.active {
+        position: absolute;
+        opacity: 1;
+        pointer-events: all;
+        transition: all 500ms ease-out;
+      }
+    }
+    .search-icon {
+      cursor: pointer;
+      padding: 0.5em;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $light;
+      color: $black;
+      margin-right: 1em;
+      z-index: 2;
+      transition: all 250ms ease-out;
+      &.active {
+        transform: translate(2rem, 0);
+      }
+    }
+    .profile {
+      .profile-pic {
+        font-size: 2rem;
+        cursor: pointer;
+      }
+    }
   }
 }
