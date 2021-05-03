@@ -47,7 +47,7 @@
           <li class="nav-item"><a href="./../user/register" class="nav-link" target="_blank">Sign in</a></li>
           ';
         } else {
-          echo '<li class="nav-item"><a href="#" class="nav-link">Logout</a></li>';
+          echo '<li class="nav-item"><a href="./../user/logout.php" class="nav-link">Logout</a></li>';
         }
 
       ?>
@@ -70,7 +70,7 @@
               <a class="nav-link" href="./../user/register" target="_blank"><li class="nav-item" target="_blank">Sign in</li></a>
               ';
             } else {
-              echo '<a class="nav-link" href="./user/logout.php"><li class="nav-item">Logout</li></a>';
+              echo '<a class="nav-link" href="./../user/logout.php"><li class="nav-item">Logout</li></a>';
             }
 
           ?>
