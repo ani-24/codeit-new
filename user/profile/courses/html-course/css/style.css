@@ -569,6 +569,15 @@ footer .copyright .copyright-text {
           align-items: center;
 }
 
+main {
+  text-align: center;
+  color: #f7f7f7;
+}
+
+main img {
+  width: 50%;
+}
+
 body {
   background: #191919;
   height: 100vh;
@@ -582,14 +591,5 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-main {
-  text-align: center;
-  color: #f7f7f7;
-}
-
-main img {
-  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

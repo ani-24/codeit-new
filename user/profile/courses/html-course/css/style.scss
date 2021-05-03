@@ -1,4 +1,5 @@
 @import "./../../../../../assets/css/links";
+@import "./../../assets/css/undeveloped";
 
 body {
   background: $dark;
@@ -7,12 +8,4 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-main {
-  text-align: center;
-  color: $light;
-  img {
-    width: 50%;
-  }
 }
