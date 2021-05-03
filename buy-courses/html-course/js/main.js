@@ -1,6 +1,9 @@
-const bg = document.querySelector(".bg");
-const bgImg = bg.dataset.img;
-bg.setAttribute(
-  "style",
-  `background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../../assets/img/${bgImg}")`
-);
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    location.replace("./../../");
+  }, 3000);
+});
+
+// const video = document.querySelector(".course-preview video");
+// const videoPos = video.dataset.poster;
+// video.poster = `./../../assets/img/${videoPos}`;

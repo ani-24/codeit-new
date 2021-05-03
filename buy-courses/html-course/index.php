@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="refresh" content="3;url=./../../course/">
   <title>HTML course (From Zero to Hero) | CodeIT</title>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./css/style.css">
@@ -24,7 +25,13 @@
     }
   ?>
 
-  <header class="profile-nav">
+  <div class="preloader">
+    <img src="./../../assets/img/codeit_favicon.png" alt="" class="logo">
+    <p>This course is being developed</p>
+  </div>
+
+  <!-- 
+    <header class="profile-nav">
     <div class="brand-logo">
       <a href="./../../">CodeIT</a>
     </div>
@@ -39,22 +46,66 @@
     </div>
   </header>
 
-  <div class="bg" data-img="html_thumbnail.png"></div>
-  
-  <div class="container">
-    <div class="course-details">
-      <div class="about-course">
-        <div class="course-preview video-container">
-          <div class="play-circle-outer">
-            <div class="play-circle-inner">
-              <i class="fas fa-play play-icon"></i>
-            </div>
-          </div>
-          <video src="./media/preview.mp4" poster="./../../assets/img/html_thumbnail.png"></video>
-        </div>
+  <div class="bg" data-img="html_thumbnail.png">
+    <div class="container">
+      <div id="yt">
+        <h1>Learn for free on our YouTube channel</h1>
+        <iframe class="yt-vid" src="https://www.youtube.com/embed/Ow0TwtLpqwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </div>
+  
+  <div class="about-course">
+    <div class="course-preview">
+      <div class="video-container">
+        <div class="play-circle-outer">
+          <div class="play-circle-inner">
+            <i class="fas fa-play play-icon"></i>
+          </div>
+        </div>
+        <video src="./media/preview.mp4" data-poster="html_thumbnail.png"></video>
+      </div>
+    </div>
+    <div class="course-body">
+      <h3 class="course-title">HTML Tutorial (From Zero To Hero)</h3>
+      <p class="course-desc">
+        In this course, we would learn HTML from the very basic and take it to the advanced HTML 5 and also with some basic knowledge of CSS.
+      </p>
+      <div class="course-action">
+        <a href="./final-purchase" class="btn btn-green">Buy for Free</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="course-details">
+    <section>
+      <h3 class="section-heading">What you will learn in this course?</h3>
+        <ul class="list">
+          <li class="list-item">Basics of HTML</li>
+          <li class="list-item">Best practices to use while writing HTML</li>
+          <li class="list-item">Basic knowledge of CSS</li>
+          <li class="list-item">Advanced HTML 5 topics</li>
+          <li class="list-item">Creating simple static websites</li>
+        </ul>
+    </section>
+    <section>
+      <h3 class="section-heading">Additional things you get from this course</h3>
+      <ul class="list">
+        <li class="list-item">Downloadable videos</li>
+        <li class="list-item">Lifetime access</li>
+        <li class="list-item">Quizess</li>
+        <li class="list-item">Exercises</li>
+        <li class="list-item">Basic knowledge of CSS</li>
+      </ul>
+    </section>
+    <section>
+      <h3 class="section-heading">For whom is this course for?</h3>
+      <p>
+        This course is for everyone. The one who has not started programming yet or one who has the knowledge of some programming languages. This course will take you from the very basic level and put to the advanced level of HTML / HTML 5. There is no prerequisites for you to learn this.
+      </p>
+    </section>
+  </div>
+   -->
 
   <script src="./../assets/js/headers.js"></script>
   <script src="./js/main.js"></script>

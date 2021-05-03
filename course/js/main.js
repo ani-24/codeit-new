@@ -8,61 +8,10 @@ const courseArr = [
     title: "HTML Tutorial (From Zero to Hero)",
     desc:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis laborum aliquid voluptas ipsa itaque adipisci!",
-    price: "₹1999",
+    price: "Free",
     tag:
       "html|html tutorial|html course|web development|Front end development|Front-end development",
-    link: "#",
-  },
-  {
-    img: "./../assets/img/css_thumbnail.png",
-    title: "A complete CSS course",
-    desc:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis laborum aliquid voluptas ipsa itaque adipisci!",
-    price: "₹1999",
-    tag:
-      "css|cascading style sheets|styling|web development|css course|Front end development|Front-end development",
-    link: "#",
-  },
-  {
-    img: "./../assets/img/js_thumbnail.png",
-    title: "Advanced JS projects (50+ projects)",
-    desc:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis laborum aliquid voluptas ipsa itaque adipisci!",
-    price: "₹1999",
-    tag:
-      "js|javascript|java script|web development|js course|javascript course| java script course|Front end development|Front-end development",
-    link: "#",
-  },
-  {
-    img: "./../assets/img/beg_react_thumbnail.png",
-    title: "React JS for absolute beginners",
-    desc:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis laborum aliquid voluptas ipsa itaque adipisci!",
-    price: "₹1999",
-    tag:
-      "react|react js|react javascript|js|javascript|java script|react java script|web development|js library|javascript library|for beginners|beginners|react js for beginners|react javascript for beginners|react js course for beginners|react javascript course for beginners|react js for absolute beginners|react javascript for absolute beginners|Front end development|Front-end development|react js tutorial for absolute beginners|react javascript tutorial for absolute beginners|react js tutorial",
-    link: "#",
-  },
-  {
-    img: "./../assets/img/advanced_react_thumbnail.png",
-    title: "Advanced React JS course",
-    desc:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis laborum aliquid voluptas ipsa itaque adipisci!",
-    price: "₹1999",
-    tag:
-      "react|react js|react javascript|js|javascript|java script|react java script|web development|js library|javascript library|for advanced|advanced javascript course|advanced|react js course for advanced|Front end development|Front-end development|react js tutorial|react js tutorial for advanced learners|react js tutorial advanced|react js tutorial",
-    link: "#",
-  },
-  {
-    img: "./../assets/img/python_thumbnail.png",
-    title: "Python tutorial for all",
-    desc:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis laborum aliquid voluptas ipsa itaque adipisci!",
-    link: "#",
-    price: "₹1999",
-    tag:
-      "python|web development|python tutorial for absolute beginners|python tutorial for beginners|advanced python tutorial|python tutorial for all|Front end development|Front-end development",
-    link: "#",
+    link: "./../buy-courses/html-course",
   },
 ];
 

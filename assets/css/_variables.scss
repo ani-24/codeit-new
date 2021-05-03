@@ -3,12 +3,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 
 // ? Font families
 $poppins: "Poppins", sans-serif;
 $staatliches: "Staatliches", cursive;
 $zendots: "Zen Dots", cursive;
 $bangers: "Bangers", cursive;
+$ubuntu: "Ubuntu", sans-serif;
+$raleway: "Raleway", sans-serif;
 
 // ? Colors
 $red: #e74c3c;
@@ -20,3 +24,4 @@ $dark: #191919;
 $black: #000000;
 $blue: #3498db;
 $green: #2ecc71;
+$brand-clr: #00242b;

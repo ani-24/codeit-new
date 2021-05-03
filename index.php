@@ -29,7 +29,10 @@
               <li class="nav-item"><a href="./user/register" class="nav-link" target="_blank">Sign in</a></li>
               ';
             } else {
-              echo '<li class="nav-item"><a href="./user/logout.php" class="nav-link">Logout</a></li>';
+              echo '
+              <li class="nav-item"><a href="./user/profile" class="nav-link">My profile</a></li>
+              <li class="nav-item"><a href="./user/logout.php" class="nav-link">Logout</a></li>
+              ';
             }
 
           ?>
@@ -77,52 +80,19 @@
       <div class="container">
         <div class="grid">
           <div class="card-container" data-page="html">
+            <div class="badge badge-yellow">Coming soon</div>
             <div class="card-img">
               <img src="./assets/img/html_thumbnail.png" alt="HTML" />
             </div>
             <div class="card-body">
               <h4 class="card-title">HTML tutorial (from zero to hero)</h4>
               <div class="card-desc">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Perspiciatis laborum aliquid voluptas ipsa itaque adipisci!
+              In this course, we would learn HTML from the very basic and take it to the advanced HTML 5 and also with some basic knowledge of CSS.
               </div>
             </div>
             <div class="card-footer">
               <a href="./buy-courses/html-course/" class="btn btn-green"><i class="fas fa-shopping-cart"></i>&nbsp;Buy Now</a>
-              <div class="price-tag">₹1999.00</div>
-            </div>
-          </div>
-          <div class="card-container" data-page="css">
-            <div class="card-img">
-              <img src="./assets/img/css_thumbnail.png" alt="CSS" />
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">A complete CSS course</h4>
-              <div class="card-desc">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Perspiciatis laborum aliquid voluptas ipsa itaque adipisci!
-              </div>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-green"><i class="fas fa-shopping-cart"></i>&nbsp;Buy Now</a>
-              <div class="price-tag">₹1999.00</div>
-            </div>
-          </div>
-          <div class="card-container" data-page="js">
-            <div class="badge badge-yellow">bestseller</div>
-            <div class="card-img">
-              <img src="./assets/img/js_thumbnail.png" alt="HTML" />
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Advanced JS projects (50+ projects)</h4>
-              <div class="card-desc">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Perspiciatis laborum aliquid voluptas ipsa itaque adipisci!
-              </div>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-green"><i class="fas fa-shopping-cart"></i>&nbsp;Buy Now</a>
-              <div class="price-tag">₹3999.00</div>
+              <div class="price-tag">Free</div>
             </div>
           </div>
         </div>
@@ -143,15 +113,27 @@
           <div class="section">
             <h3 class="heading">Quick Links</h3>
             <ul>
-              <li class="footer-list-item"><a class="footer-link" href="#">Home</a></li>
-              <li class="footer-list-item"><a class="footer-link" href="#">Courses</a></li>
-              <li class="footer-list-item"><a class="footer-link" href="#">Contact us</a></li>
+              <li class="footer-list-item"><a class="footer-link" href="./">Home</a></li>
+              <li class="footer-list-item"><a class="footer-link" href="./course">Courses</a></li>
+              <li class="footer-list-item"><a class="footer-link" href="./contact">Contact us</a></li>
             </ul>
           </div>
           <div class="section">
             <h3 class="heading">Get connected</h3>
-            <a href="./user/register" class="m-10 btn btn-outline-red">Sign in</a>
-            <a href="./user/login" class="m-10 btn btn-outline-light">Login</a>
+            <?php
+              if (!isset($_SESSION['fname'])) {
+                echo '
+                <a href="./user/register" class="m-10 btn btn-outline-red">Sign in</a>
+                <a href="./user/login" class="m-10 btn btn-outline-light">Login</a>
+                ';
+              } else {
+                echo '
+                <a href="./user/profile" class="m-10 btn btn-outline-green">My profile</a>
+                <a href="./user/logout.php" class="m-10 btn btn-outline-red">Logout</a>
+                ';
+              }
+              
+            ?>
             <a href="./contact/" class="m-10 btn btn-outline-blue">Drop a message</a>
           </div>
         </div>

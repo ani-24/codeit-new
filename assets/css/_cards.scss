@@ -9,7 +9,6 @@ $card-fg: $dark;
   color: $card-fg;
   display: grid;
   transition: 250ms ease-in-out;
-  grid-template-areas: "img" "body" "footer";
   .badge {
     position: absolute;
     top: 0;

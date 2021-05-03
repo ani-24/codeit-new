@@ -1,0 +1,30 @@
+.video-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  .play-circle-outer {
+    position: absolute;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed $blue;
+    .play-circle-inner {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+      background: $blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .play-icon {
+        font-size: 2rem;
+        color: $light;
+      }
+    }
+  }
+}

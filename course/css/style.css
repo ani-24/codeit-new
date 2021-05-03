@@ -2,10 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 *,
 *::before,
 *::after {
@@ -257,7 +261,6 @@ p {
   display: grid;
   -webkit-transition: 250ms ease-in-out;
   transition: 250ms ease-in-out;
-      grid-template-areas: "img" "body" "footer";
 }
 
 .card-container .badge {
@@ -438,6 +441,14 @@ p {
   background: #208e4e;
 }
 
+.btn.btn-red {
+  background: #e74c3c;
+}
+
+.btn.btn-red:hover {
+  background: #bf2718;
+}
+
 .btn .icon {
   -webkit-transition: 250ms ease-in-out;
   transition: 250ms ease-in-out;
@@ -474,6 +485,26 @@ p {
 
 .btn.btn-outline-blue:hover {
   background: #3498db;
+  color: #f7f7f7;
+}
+
+.btn.btn-outline-green {
+  border: 1px solid #2ecc71;
+  color: #2ecc71;
+}
+
+.btn.btn-outline-green:hover {
+  background: #2ecc71;
+  color: #f7f7f7;
+}
+
+.btn.btn-outline-red {
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+}
+
+.btn.btn-outline-red:hover {
+  background: #e74c3c;
   color: #f7f7f7;
 }
 

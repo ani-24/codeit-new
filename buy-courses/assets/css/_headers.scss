@@ -1,11 +1,11 @@
 .profile-nav {
   position: relative;
   width: 100%;
-  padding: 0.5em 5%;
+  padding: 1em 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: $black;
+  background: $brand-clr;
   .brand-logo {
     font-size: 3rem;
     font-family: $staatliches;

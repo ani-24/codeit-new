@@ -16,8 +16,8 @@
     
     if (isset($_POST["submit"])) {
       
-      $fname = mysqli_real_escape_string($con, $_POST["fname"]);
-      $lname = mysqli_real_escape_string($con, $_POST["lname"]);
+      $fname = ucfirst(mysqli_real_escape_string($con, $_POST["fname"]));
+      $lname = ucfirst(mysqli_real_escape_string($con, $_POST["lname"]));
       $mobile = mysqli_real_escape_string($con, $_POST["mobile"]);
       $email = mysqli_real_escape_string($con, $_POST["email"]);
       $pass = mysqli_real_escape_string($con, $_POST["pass"]);
@@ -45,6 +45,8 @@
             </script>
             <?php
           }
+        } else {
+          echo "<script>alert('Password is incorrect');</script>";
         }
       }
 

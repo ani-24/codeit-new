@@ -1,0 +1,79 @@
+@import "./../../../assets/css/links";
+
+.welcome-header {
+  height: 50vh;
+  width: 100%;
+  background: #3494e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #ec6ead,
+    #3494e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #ec6ead,
+    #3494e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $ubuntu;
+  color: $white;
+  border-radius: 0 0 100px 100px;
+  .operation {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    i {
+      color: $white;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .welcome-header {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+main {
+  padding: 25px;
+  margin: 2em auto !important;
+  .heading {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 3rem;
+    font-family: $bangers;
+    letter-spacing: 5px;
+  }
+  .course-msg {
+    text-align: center;
+    opacity: 0.5;
+    margin-top: 5rem;
+    .course-msg-emoji {
+      font-size: 5rem;
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  main {
+    .course-msg {
+      .course-msg-emoji {
+        font-size: 3rem;
+      }
+      .course-msg-text {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

@@ -11,6 +11,26 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <?php
+
+      include "./../user/connection.php";
+
+      if (isset($_POST['submit'])) {
+        $fname = $_POST['fname'];
+        $lname = $_POST['lname'];
+        $mobile = $_POST['mobile'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        $query = " INSERT INTO contact ( fname, lname, mobile, email, feedback ) VALUES ( '$fname', '$lname', '$mobile', '$email', '$message' )";
+        $result = mysqli_query($con, $query);
+        if ($result) {
+          echo "<script>alert('Message successfully sent.');</script>";
+        } else {
+          echo "<script>alert('Unable to send the message');<script>";
+        }
+      }
+
+    ?>
     <header class="main-nav">
       <div class="brand-logo"><a href="./../">CodeIT</a></div>
       <ul class="nav-list">
@@ -23,8 +43,8 @@
 
         if (!isset($_SESSION['fname'])) {
           echo '
-          <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
-          <li class="nav-item"><a href="./user/register.php" class="nav-link">Sign in</a></li>
+          <li class="nav-item"><a href="./../user/login" class="nav-link" target="_blank">Login</a></li>
+          <li class="nav-item"><a href="./../user/register" class="nav-link" target="_blank">Sign in</a></li>
           ';
         } else {
           echo '<li class="nav-item"><a href="#" class="nav-link">Logout</a></li>';
@@ -46,8 +66,8 @@
 
             if (!isset($_SESSION['fname'])) {
               echo '
-              <a class="nav-link" href="./user/login" target="_blank"><li class="nav-item">Login</li></a>
-              <a class="nav-link" href="./user/register" target="_blank"><li class="nav-item">Sign in</li></a>
+              <a class="nav-link" href="./../user/login" target="_blank"><li class="nav-item" target="_blank">Login</li></a>
+              <a class="nav-link" href="./../user/register" target="_blank"><li class="nav-item" target="_blank">Sign in</li></a>
               ';
             } else {
               echo '<a class="nav-link" href="./user/logout.php"><li class="nav-item">Logout</li></a>';
@@ -58,19 +78,19 @@
     </div>
     <main>
       <div class="container">
-        <form action="#" method="POST">
+        <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
           <div class="grid">
             <div class="input-field">
-              <input type="text" placeholder="First name" class="input" />
+              <input type="text" placeholder="First name" class="input" name="fname" required/>
             </div>
             <div class="input-field">
-              <input type="text" placeholder="Last name" class="input" />
+              <input type="text" placeholder="Last name" class="input" name="lname" required/>
             </div>
             <div class="input-field">
-              <input type="text" placeholder="Mobile no." class="input" />
+              <input type="text" placeholder="Mobile no." class="input" name="mobile" required/>
             </div>
             <div class="input-field">
-              <input type="text" placeholder="Email" class="input" />
+              <input type="text" placeholder="Email" class="input" name="email" required/>
             </div>
             <div class="input-field">
               <textarea
@@ -78,11 +98,13 @@
                 id="message"
                 class="input"
                 placeholder="Message"
+                required
+                name="message"
               ></textarea>
             </div>
           </div>
           <div class="h-center">
-            <button type="submit" class="submit">Send</button>
+            <button type="submit" class="submit" name="submit">Send</button>
           </div>
         </form>
       </div>
