@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="refresh" content="3;url=./../../course/">
   <title>HTML course (From Zero to Hero) | CodeIT</title>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./css/style.css">
@@ -25,12 +24,7 @@
     }
   ?>
 
-  <div class="preloader">
-    <img src="./../../assets/img/codeit_favicon.png" alt="" class="logo">
-    <p>This course is being developed</p>
-  </div>
-
-  <!-- 
+  
     <header class="profile-nav">
     <div class="brand-logo">
       <a href="./../../">CodeIT</a>
@@ -105,7 +99,7 @@
       </p>
     </section>
   </div>
-   -->
+  
 
   <script src="./../assets/js/headers.js"></script>
   <script src="./js/main.js"></script>
